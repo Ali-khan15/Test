@@ -4,18 +4,15 @@ import { useLocation } from 'react-router-dom';
 const TopNavbar = () => {
   const location = useLocation();
   
-  // Check if current path is the find jobs page
   const isFindJobsActive = location.pathname === '/' || location.pathname === '/find-jobs';
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col">
-          {/* Top Row - Navigation Items */}
           <div className="flex justify-between items-center h-12">
-            {/* Left Side - Navigation Links */}
             <div className="flex items-center space-x-6">
-              {navItems.map((item, index) => {
+              {navItems.map((item: string, index: number) => {
                 const isActive = item === 'Find Jobs' && isFindJobsActive;
                 return (
                   <a
@@ -33,9 +30,7 @@ const TopNavbar = () => {
               })}
             </div>
             
-            {/* Right Side - Search and Resume Builder */}
             <div className="flex items-center space-x-4">
-              {/* Search with icon */}
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                   <svg className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -49,14 +44,12 @@ const TopNavbar = () => {
                 />
               </div>
               
-              {/* Resume Builder Button */}
               <button className="bg-blue-600 text-white px-4 py-1.5 rounded-md hover:bg-blue-700 transition-colors text-sm font-medium whitespace-nowrap">
                 Resume Builder
               </button>
             </div>
           </div>
-          
-        
+       
         </div>
       </div>
     </nav>

@@ -1,4 +1,4 @@
-export const navItems = [
+export const navItems: string[] = [
   "Find Jobs",
   "Top Companies", 
   "Job Tracker",
@@ -8,7 +8,20 @@ export const navItems = [
   "Notifications"
 ];
 
-export const featuredJobs = [
+export interface Job {
+  id: number;
+  title: string;
+  company: string;
+  location: string;
+  type: string;
+  criteria: string;
+  tags: string[];
+  posted: string;
+  applicants: number;
+  remote: boolean;
+}
+
+export const featuredJobs: Job[] = [
   {
     id: 1,
     title: "Senior Product Designer",

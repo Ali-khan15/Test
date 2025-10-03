@@ -1,4 +1,6 @@
-const JobCard = ({ job }) => {
+import type { JobCardProps } from '../types';
+
+const JobCard = ({ job }: JobCardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
       <div className="flex justify-between items-start mb-4">
@@ -16,7 +18,7 @@ const JobCard = ({ job }) => {
       </div>
       
       <div className="flex flex-wrap gap-2 mb-4">
-        {job.tags.map((tag, index) => (
+        {job.tags.map((tag: string, index: number) => (
           <span
             key={index}
             className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm"
