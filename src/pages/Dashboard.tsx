@@ -35,17 +35,17 @@ const FindJobs = () => {
                     <input
                       type="text"
                       placeholder="Job Title, Company, or Keywords"
-                      className="flex-1 px-4 py-2.5 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 sm:border-r-0 sm:rounded-r-none"
+                      className="flex-1 px-4 py-2.5 bg-white border-r border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-1 focus:ring-blue-500 sm:border-r-0 sm:rounded-r-none"
                     />
 
-                    <select className="px-4 py-2.5 bg-white border border-gray-300 rounded-lg text-sm text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:border-r-0 sm:rounded-none">
+                    <select className="px-4 py-2.5 bg-white border-r border-gray-300 rounded-lg text-sm text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:border-r-0 sm:rounded-none">
                       <option>Select Location</option>
                       <option>Remote</option>
                       <option>New York</option>
                       <option>London</option>
                     </select>
 
-                    <select className="px-4 py-2.5 bg-white border border-gray-300 rounded-lg text-sm text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:border-r-0 sm:rounded-none">
+                    <select className="px-4 py-2.5 bg-white border-r border-gray-300 rounded-lg text-sm text-gray-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:border-r-0 sm:rounded-none">
                       <option>Job Type</option>
                       <option>Full Time</option>
                       <option>Part Time</option>
