@@ -29,7 +29,7 @@ const TopNavbar = () => {
           <div className="flex items-center space-x-6">
             <div className="flex-shrink-0">
               <img
-                src="/src/assets/logo-test.svg"
+                src="/src/assets/logo-test.svg" 
                 alt="Logo"
                 className="h-15 w-auto"
               />
